@@ -1,0 +1,34 @@
+import random
+
+player = input("안 내면 진다 가위바위보:")
+computer_list = ["가위", "바위", "보"]
+computer = random.choice(computer_list)
+
+if player == "가위" and computer == "바위":
+    print(computer)
+    #print(f"computer : {computer} vs player : {player}")
+    print("짐")
+elif player == "바위" and computer == "보":
+    print(computer)
+    #print(f"computer : {computer} vs player : {player}")
+    print("짐")
+elif player == "보" and computer == "가위":
+    print(computer)
+    #print(f"computer : {computer} vs player : {player}")
+    print("짐")
+elif player == "가위" and computer == "보":
+    print(computer)
+    #print(f"computer : {computer} vs player : {player}")
+    print("이김")
+elif player == "바위" and computer == "가위":
+    print(computer)
+    #print(f"computer : {computer} vs player : {player}")
+    print("이김")
+elif player == "보" and computer == "바위":
+    print(computer)
+    #print(f"computer : {computer} vs player : {player}")
+    print("이김")
+elif player == computer:
+    print(computer)
+    #print(f"computer : {computer} vs player : {player}")
+    print("비김")
